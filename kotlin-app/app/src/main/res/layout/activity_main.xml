@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <Button
+            android:id="@+id/enableBluetoothButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable Bluetooth" />
+
+        <Button
+            android:id="@+id/getDevicesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get BT Module Devices" />
+
+        <ListView
+            android:id="@+id/deviceListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/device_list_item" />
+
+        <ToggleButton
+            android:id="@+id/toggleLedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="Turn Off LED"
+            android:textOff="Turn On LED" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
